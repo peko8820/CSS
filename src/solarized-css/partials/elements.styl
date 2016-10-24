@@ -2,13 +2,13 @@
 html
   background-color: $hl
   color: $fg
-  margin: 1em
+  //margin: 1em
 
 body
   background-color: $bg
-  margin: 0 auto
-  max-width: 23cm
-  border: 1pt solid $comment
+  margin-left: 23%
+  max-width: 100%
+  //border: 1pt solid $comment
   padding: 1em
 
 code
@@ -39,6 +39,22 @@ pre
   code
     background-color: @background-color
 
+pre.src:before
+  background-color: $bg
+  display: block
+  position: absolute
+  top: 0
+  right: 0
+  padding 0.25em 0.5em
+  border-bottom-left-radius: 8px
+  color: $green
+  border-style: solid
+  border-width: 1pt
+  border-color: $comment
+  font-size: 80%
+
+@import "src-content"
+
 h1
   font-size: 2.8em
 h2
@@ -51,3 +67,52 @@ h5
   font-size: 1.3em
 h6
   font-size: 1.15em
+
+
+table
+    width: 100%
+
+
+table, th, td
+    border: 1px solid $comment
+
+
+th, td
+    padding: 0.25em
+    text-align: left
+
+
+tbody tr:nth-child(odd)
+    background-color: $hl
+
+
+#table-of-contents
+  line-height: 1.2
+  background-color: $hl
+
+#table-of-contents h2
+  border-bottom: 0
+
+
+#table-of-contents ul
+  list-style: none
+  padding-left:0
+  font-weight: normal
+
+
+#table-of-contents div>ul>li
+  margin-top: 1em
+  font-weight: bold
+
+
+#table-of-contents .tag
+  display: none
+
+
+#table-of-contents .todo,
+#table-of-contents .done
+  font-size: 80%
+
+
+#table-of-contents ol>li
+  margin-top: 1em

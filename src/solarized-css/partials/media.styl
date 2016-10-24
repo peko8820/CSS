@@ -1,0 +1,90 @@
+@media screen
+  h1.title
+    text-align: left
+    margin: 1em 0 0 280px
+
+
+  h2
+    margin-top: 3em
+
+
+  #table-of-contents
+    position: fixed
+    top: 0
+    left: 0
+    padding: 2em 0 2em 2em
+    width: 20%
+    height: 100vh
+    font-size: 11px
+    background-color: $hl
+    overflow: auto
+
+
+  #table-of-contents ul>li>ul>li>ul>li
+    display: none
+
+
+  #table-of-contents h2
+    margin-top: 0
+
+
+  #table-of-contents code
+    font-size: 12px
+
+
+  div.outline-2, #footnotes
+    margin-left: 5%
+    max-width: 100%
+
+
+
+@media screen and (max-width: 1024px)
+  html, body
+    font-size: 14px
+
+
+  #table-of-contents
+    display: none
+
+
+  h1.title
+    margin-left: 5%
+
+
+  div.outline-2, #footnotes
+    margin-left: 5%
+    max-width: 90%
+
+
+
+@media print
+
+  body
+    color: black
+    margin-left: 0%
+
+
+  @page
+    margin: 25mm
+
+
+  h2
+    page-break-before: always
+    margin-top: 0
+
+
+  table
+    page-break-inside: avoid
+
+
+  a:visited
+    color: black
+    background: #ff8
+
+
+  a[href^="http"]:visited
+    background: #bff
+
+
+  div.notice:before
+    display: none
