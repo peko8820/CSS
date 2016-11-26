@@ -395,7 +395,7 @@ tbody tr:nth-child(odd) {
     padding: 2em 0 2em 2em;
     width: 20%;
     height: 100vh;
-    font-size: 11px;
+    font-size: 12px;
     background-color: #eee8d5;
     overflow: auto;
   }
@@ -418,6 +418,7 @@ tbody tr:nth-child(odd) {
   html,
   body {
     font-size: 14px;
+    margin-left: 0%;
   }
   #table-of-contents {
     display: none;
@@ -427,8 +428,8 @@ tbody tr:nth-child(odd) {
   }
   div.outline-2,
   #footnotes {
-    margin-left: 5%;
-    max-width: 90%;
+    margin-left: 0%;
+    max-width: 100%;
   }
 }
 @media print {
